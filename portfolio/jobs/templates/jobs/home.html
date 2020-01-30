@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    {% load staticfiles %}
+    {% load static %}
     <meta charset="utf-8">
     <title>
     Knyght Portfolio
@@ -12,7 +12,7 @@
 
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -41,6 +41,7 @@
           <h1 class="jumbotron-heading">Hi, I'm Knyght</h1>
           <p class="lead text-muted">Hey, How's it going?</p>
           <p> <a href="mailto:knyghtmare1995@gmail.com" class="btn btn-primary my-2">Email Me</a> </p>
+          <img src="{% static 'knyght.jpg' %}" alt="" height="300"/>
         </div>
       </section>
       <div class="container">
