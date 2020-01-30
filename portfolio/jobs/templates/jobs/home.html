@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    {% load staticfiles %}
     <meta charset="utf-8">
     <title>
     Knyght Portfolio
@@ -24,7 +25,7 @@
               <a class="nav-link" href="#">Twitter</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Resume</a>
+              <a class="nav-link" href="{% static 'resume.pdf' %}">Resume</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
